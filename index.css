@@ -1,6 +1,7 @@
 p {
   font-family: 'Itim', cursive;
   font-size: 20px;
+  text-align: center;
 }
 
 h1 {
@@ -14,7 +15,6 @@ h1 {
 body {
   background-color: rgb(255, 253, 233);
   padding-left: 10px;
-  text-align: center;
 }
 
 code {
