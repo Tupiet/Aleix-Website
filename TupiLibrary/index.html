@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="./index.css">
+  <link rel="stylesheet" type="text/css" href="../index.css">
   <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
   <title>TupiLibrary</title>
 </head>
@@ -13,7 +13,15 @@
     bastante algunos aspectos de la programación en Kotlin.</p>
   <p>Como la mayoría de sus proyectos, es código abierto y puede consultarse desde su repositorio de Github,
     el cual puede visitarse desde <a href="https://github.com/Tupiet/TupiLibrary">aquí</a>.</p>
-  <code>hello</code>
+  <p>Para poder usar esta librería, es necesario añadir esto al build.gradle de nivel de proyecto:</p>
+  <code> allprojects {
+    repositories {
+    ...
+    maven { url 'https://jitpack.io' }
+    }
+    }</code>
+  <p>Y añadir esta dependencia al build.gradle de nivel de app:</p>
+  <code>implementation 'com.github.Tupiet:TupiLibrary:1.1.1'</code>
 </body>
 
 </html>
