@@ -1,17 +1,26 @@
 p {
-    font-family: 'Itim', cursive;
-    font-size: 20px;
-  }
-  
-  h1 {
-    font-family: 'Itim', cursive;
-    padding-top: 20px;
-    text-align: center;
-    font-size: 40px;;
-  }
-  
-  body {
-    background-color: rgb(255, 253, 233);
-    padding-left: 10px;
-    text-align: center;
-  }
+  font-family: 'Itim', cursive;
+  font-size: 20px;
+}
+
+h1 {
+  font-family: 'Itim', cursive;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 40px;
+  ;
+}
+
+body {
+  background-color: rgb(255, 253, 233);
+  padding-left: 10px;
+  text-align: center;
+}
+
+code {
+  font-family: Consolas, "courier new";
+  color: crimson;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
+}
