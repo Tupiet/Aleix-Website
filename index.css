@@ -61,6 +61,7 @@ li a {
   text-decoration: none;
   font-size: 20px;
   border-radius: 10px;
+  font-family: 'Itim', cursive;
 }
 
 li a:hover {
