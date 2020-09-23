@@ -12,9 +12,15 @@ h1 {
   ;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   background-color: rgb(255, 253, 233);
   padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Itim', cursive;
 }
 
 .code {
