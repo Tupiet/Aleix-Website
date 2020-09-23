@@ -19,7 +19,6 @@ body {
 
 .code {
   width: 50%;
-  font-family: Consolas, "courier new", monospace;
   color: crimson;
   background-color: rgb(17, 17, 17);
   padding: 2px;
@@ -28,5 +27,6 @@ body {
 }
 
 code {
+  font-family: Consolas, "courier new", monospace;
   text-align: left;
 }
