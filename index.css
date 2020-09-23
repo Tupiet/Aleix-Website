@@ -21,7 +21,7 @@ code {
   width: 50%;
   font-family: Consolas, "courier new", monospace;
   color: crimson;
-  background-color: #f1f1f1;
+  background-color: rgb(17, 17, 17);
   padding: 2px;
   margin-left: auto;
   margin-right: auto;
