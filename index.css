@@ -73,3 +73,13 @@ li a:hover:not(.active) {
   background-color: #111;
   border-radius: 10px;
 }
+
+.active {
+  background-color: #B04500;
+}
+
+.active:hover {
+  background-color: #732D00;
+}
+
+/* Fin del menú */
