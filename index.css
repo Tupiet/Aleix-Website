@@ -19,7 +19,6 @@ body {
 
 .code {
   width: 50%;
-  text-align: center;
   font-family: Consolas, "courier new", monospace;
   color: crimson;
   background-color: #f1f1f1;
@@ -33,5 +32,5 @@ code {
   background-color: #f1f1f1;
   padding: 2px;
   position: relative;
-  text-align: left !important;
+  text-align: left;
 }
