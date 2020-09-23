@@ -19,11 +19,12 @@ body {
 
 .code {
   width: 50%;
-  color: crimson;
+  color: rgb(212, 213, 195);
   background-color: rgb(17, 17, 17);
   padding: 2px;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 2px;
 }
 
 code {
