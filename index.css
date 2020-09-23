@@ -24,6 +24,7 @@ body {
   background-color: #f1f1f1;
   padding: 2px;
   position: relative;
+  justify-content: center;
 }
 
 code {
