@@ -18,7 +18,7 @@ body {
 }
 
 .code {
-  width: auto;
+  width: inherit;
   color: rgb(212, 213, 195);
   background-color: rgb(25, 25, 25);
   padding: 2px;
