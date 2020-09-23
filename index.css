@@ -9,7 +9,13 @@ h1 {
   padding-top: 20px;
   text-align: center;
   font-size: 40px;
-  ;
+}
+
+h2 {
+  font-family: 'Itim', cursive;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 30px;
 }
 
 a {
