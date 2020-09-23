@@ -20,11 +20,11 @@ body {
 .code {
   width: 50%;
   color: rgb(212, 213, 195);
-  background-color: rgb(17, 17, 17);
+  background-color: rgb(25, 25, 25);
   padding: 2px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 code {
