@@ -56,7 +56,7 @@ code {
 }
 
 /* Menú */
-.menu ul {
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -65,12 +65,12 @@ code {
   border-radius: 10px;
 }
 
-.menu li {
+li {
   float: left;
   border-radius: 10px;
 }
 
-.menu li a {
+li a {
   display: block;
   color: white;
   text-align: center;
@@ -81,12 +81,12 @@ code {
   font-family: 'Itim', cursive;
 }
 
-.menu li a:hover {
+li a:hover {
   display: block;
   transition: 1s;
 }
 
-.menu li a:hover:not(.active) {
+li a:hover:not(.active) {
   background-color: #111;
   border-radius: 10px;
 }
