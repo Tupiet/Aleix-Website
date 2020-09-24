@@ -65,12 +65,12 @@ code {
   border-radius: 10px;
 }
 
-li {
+.menu li {
   float: left;
   border-radius: 10px;
 }
 
-li a {
+.menu li a {
   display: block;
   color: white;
   text-align: center;
@@ -81,12 +81,12 @@ li a {
   font-family: 'Itim', cursive;
 }
 
-li a:hover {
+.menu li a:hover {
   display: block;
   transition: 1s;
 }
 
-li a:hover:not(.active) {
+.menu li a:hover:not(.active) {
   background-color: #111;
   border-radius: 10px;
 }
