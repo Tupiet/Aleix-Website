@@ -25,11 +25,6 @@ a {
   color: rgb(135, 49, 49);
 }
 
-a:hover {
-  color: black;
-  transition: 2s;
-}
-
 body {
   background-color: rgb(255, 253, 233);
   padding-left: 10px;
@@ -97,10 +92,6 @@ li a:hover:not(.active) {
 
 .active:hover {
   background-color: #732D00;
-}
-
-.menu {
-  color: white;
 }
 
 /* Fin del menú */
