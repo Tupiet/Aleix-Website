@@ -22,6 +22,16 @@ h2 {
 
 a {
   text-decoration: none;
+  color: rgb(0, 85, 16);
+}
+
+a:hover {
+  color: black;
+  transition: 2s;
+}
+
+a:not(hover) {
+  transition: 2s;
 }
 
 body {
