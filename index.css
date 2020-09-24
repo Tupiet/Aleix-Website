@@ -99,4 +99,8 @@ li a:hover:not(.active) {
   background-color: #732D00;
 }
 
+.menu {
+  color: white;
+}
+
 /* Fin del menú */
