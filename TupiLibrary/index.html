@@ -51,7 +51,7 @@
   <p>Y añadir esta dependencia al build.gradle de nivel de app:</p>
   <pre class="code">
     <code>
-      implementation 'tk.aleix:TupiLibrary:1.1.2'</code>
+      implementation 'tk.aleix:TupiLibrary:1.1.5'</code>
   </pre>
   <p>Ahora, tan solo necesitamos declarar la clase TupiLibrary(), por ejemplo así:</p>
   <pre class="code">
@@ -73,6 +73,13 @@
   <pre class="code">
     <code>
       tupiLibrary.alert(this, "This is the title", "This is the body of the message!")</code>
+  </pre>
+  <br>
+  <p><b>hideKeyboard()</b>: Esconde el teclado virtual tan pronto cómo se declara la función.
+    El único argumento requerido es el view (it). Un ejemplo sería:</p>
+  <pre class="code">
+    <code>
+      tupiLibrary.hideKeyboard(it)</code>
   </pre>
 
 </body>
