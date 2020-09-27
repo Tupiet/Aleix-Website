@@ -43,9 +43,7 @@ body {
   font-size: 15px;
   display: block;
   overflow-x: auto;
-}
-
-code {
+  white-space: pre;
   font-family: Consolas, "courier new", monospace;
   text-align: left;
 }
