@@ -3,3 +3,9 @@
   to = "https://calculadoradepa.tk"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/hola"
+  to = "/adeu"
+  status = 200
+  force = true
