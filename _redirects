@@ -1,4 +1,5 @@
 /pa https://calculadoradepa.tk
+https://pa.aleix.tk https://calculadoradepa.tk
 # http and https need separate rules if you don't force_ssl!
 http://pa.aleix.tk https://calculadoradepa.tk
 https://pa.aleix.tk https://calculadoradepa.tk
