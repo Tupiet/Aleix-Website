@@ -49,6 +49,7 @@ body {
 }
 
 .footer {
+  height: 10px;
   left: 1%;
   width: 98%;
   bottom: 1%;
