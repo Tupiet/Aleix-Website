@@ -53,9 +53,10 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: red;
+  background-color: rgb(139, 83, 0);
   color: white;
   text-align: center;
+  border-radius: 15px;
 }
 
 /* Menú */
