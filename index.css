@@ -30,6 +30,12 @@ body {
   /* padding-left: 10px;
   padding-right: 10px; */
   font-family: 'Itim', cursive;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 .code {
@@ -52,7 +58,7 @@ body {
   position: sticky;
   left: 1%;
   width: 98%;
-  bottom: 1px;
+  height: 60px;
   background-color: rgb(38, 38, 38);
   color: white;
   text-align: center;
