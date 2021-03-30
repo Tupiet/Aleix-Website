@@ -11,7 +11,7 @@ weather.temperature = {
 
 const KELVIN = 273;
 
-const key = "4f4e7f08085d77f2da8f50172a3a7c15";
+const key = process.env.WEATHER_API;
 
 if ('geolocation' in navigator) {
     navigator.geolocation.getCurrentPosition(setPosition, showError);
@@ -33,7 +33,7 @@ function showError(error) {
 }
 
 function getWeather(latitude, longitude) {
-    let api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
+    let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
 
     
 
