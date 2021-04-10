@@ -1,17 +1,42 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dab48e; 
+  padding-left: 15px;
+}
+
+h1 {
+  font-family: 'Rochester', cursive;
+  text-align: center;
+  font-size: 4em;
+}
+
+h2 {
+    font-family: 'Rochester', cursive;
+    text-align: center;
+    font-size: 2em;
   }
+
+p {
+    font-size: 1.5em;
+    font-family: 'Itim', cursive;
+    text-align: center;
+}
+
+/* Ordening */
   
-  .row::after {
-    content: "";
-    clear: both;
-    display: block;
-  }
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
   
-  [class*="col-"] {
-    float: left;
-    padding: 15px;
-  }
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
 
 /* For desktop: */
 .col-1 {width: 8.33%;}
