@@ -79,7 +79,7 @@
       display: none;
   }
   
-  .show-frequency {
+  .show-frequency, .show-frequency-left, .show-frequency-right {
     background-color: #047;
     color: #fff;
     padding: 30px;
@@ -89,5 +89,4 @@
     border-radius: 5px;
     border-color: rgb(0, 15, 27);
     border-style: solid;
-    display: none;
   }

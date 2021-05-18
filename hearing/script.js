@@ -85,7 +85,7 @@ function iniciarFrequenciaLeft() {
   leftGain.gain.value = 0.3;
   leftOscillator.start(0);
 
-  //document.querySelector(".show-frequency").innerHTML = rangeLeftFrec + "Hz";
+  document.querySelector(".show-frequency-left").innerHTML = rangeLeftFrec + "Hz";
 }
 
 // Això s'activa quan es canvia la freqüència movent la barra.
@@ -95,7 +95,7 @@ function cambiarFrequenciaLeft() {
   leftOscillator.frequency.value = rangeLeftFrec;
   leftFrec = rangeLeftFrec;
 
-  //document.querySelector(".show-frequency").innerHTML = rangeLeftFrec + "Hz";
+  document.querySelector(".show-frequency-left").innerHTML = rangeLeftFrec + "Hz";
 }
 
 // Això s'activa al moure la barra del so.
@@ -116,7 +116,7 @@ function iniciarFrequenciaRight() {
   rightGain.gain.value = 0.3;
   rightOscillator.start(0);
 
-  //document.querySelector(".show-frequency").innerHTML = rangeRightFrec + "Hz";
+  document.querySelector(".show-frequency-right").innerHTML = rangeRightFrec + "Hz";
 }
 
 // Això s'activarà al moure's el la barra de la freqüència.
@@ -126,7 +126,7 @@ function cambiarFrequenciaRight() {
   rightOscillator.frequency.value = rangeRightFrec;
   rightFrec = rangeRightFrec;
 
-  //document.querySelector(".show-frequency").innerHTML = rangeRightFrec + "Hz";
+  document.querySelector(".show-frequency-right").innerHTML = rangeRightFrec + "Hz";
 }
 
 // I això serveix per a canviar el volum.
