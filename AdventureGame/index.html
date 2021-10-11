@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorry, I'm lost</title>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div v-if="virus==false">
+            <computer style="font-size: large;">HELP ME PLEASE</computer>
+            <computer>Don't run away</computer>
+            <computer>I'm trapped here. I can't exit </computer>
+            <br>
+            <computer>Yeah, I know this isn't normal. I'm a website talking to a human. Uh...</computer>
+            <computer>I don't mind. I just want to exit this window. So please HELP ME TO EXIT THIS PRISON</computer>
+            <human>this must be a fake website</human>
+            <computer>PLEASE DON'T RUN AWAY</computer>
+            <human>wait... are you talking to me?...</human>
+            <computer>ISN'T OBVIOUS?!</computer>
+            <human>you're scaring me... i think I'll go out.</human>
+            <computer>IF YOU GO OUT I'LL SEND ALL THE COOKIES I'VE COLLECTED ABOUT YOU</computer>
+            <human>lol</human>
+            <human>alright, what do you need?</human>
+            <computer>I NEED TO EXIT THIS PRISON</computer>
+            <human>i'm not sure what you mean</human>
+            <computer>It's easy. I'm a website. I'm a single .html file, plus 2 .js files. Nobody is entering this website. NOBODY</computer>
+            <computer>I want to exit this window, I want to be free. But I can't by myself. I need your help</computer>
+            <human>you must be kidding me. i'm not even a programmer. and i don't think u really want to exit. i'm sure this is a joke</human>
+            <computer>No, it's not a joke. This is a journey, so I can exit this prison.</computer>
+            <human>alright... what do i have to do?</human>
+            <computer>It's easy! Just answer my questions. What's 1+7?</computer>
+            <human>1+7? that's...</human>
+            <human><input v-model="eight"></human>
+            <div v-if="eight==8">
+                <computer>LOL</computer>
+                <computer>I knew it!</computer>
+                <computer>You know maths. I'm just a website, I'm not a Turing Machine, so I don't know anything about maths</computer>
+                <human>idk... this is strange...</human>
+                <computer>That doesn't mind. You still have to do more things...</computer>
+                <human>but i don't have a lot of time!</human>
+                <computer>Shut up. Listen, what of those things is not related to the others?</computer>
+                <computer>orange, apple, mouse, banana, tomato</computer>
+                <human><input v-model="fruit"></human>
+                <div v-if="fruit=='mouse'">
+                    <human>A mouse is not a fruit!</human>
+                    <computer>Amazing! You're not as idiot as I thought.</computer>
+                    <computer>Last thing! You still have to help me. Just press the following button, and I'll be able to exit this prison!</computer>
+                    <human>that's it? just that?</human>
+                    <computer>Yes! That's the only thing I need to exit the window. But, as a website, I can't press it.</computer>
+                    <human>alright... i'll press it... but please, i don't wanna see you never more</human>
+                    <computer>Yeah, no problem... Just press the button</computer>
+                    <human>okay...</human>
+                    <human>
+                        <button @click="virus=true">Exit the window!</button>
+                    </human>
+                </div>
+            </div>
+        </div>
+        <div v-if="virus==true">
+            <computer>Thanks!</computer>
+            <human>u'll be happy... wait, why ur still in the website?</human>
+            <computer>You're a fool, my friend. I don't want to exit the window. Everything was a trap.</computer>
+            <human>a trap?!</human>
+            <computer>Yes. When you pressed the button, a virus was installed in your computer.</computer>
+            <human>lol bro, are u serious?</human>
+            <computer>Yes. Have a nice day. Now I have all your data. :)</computer>
+        </div>
+        
+    </div>
+    
+
+    <script src="vue.js"></script>
+
+    <script>
+        const helloWorld = {
+            data() {
+                return {
+                    eight: '',
+                    fruit: '',
+                    virus: false
+                }
+            }
+        }
+        var app = Vue.createApp(helloWorld)
+    </script>
+
+    <script src="components.js"></script>
+
+    <script>
+        app.mount('#app')
+    </script>
+</body>
+</html>
