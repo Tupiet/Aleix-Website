@@ -1,0 +1,27 @@
+td {
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+td#a1:hover {
+  background: #b9b9b9;
+}
+td#a2:hover {
+  background: #b9b9b9;
+}
+td#a3:hover {
+  background: #b9b9b9;
+}
+td#a4:hover {
+  background: #b9b9b9;
+}
+td#a5:hover {
+  background: #b9b9b9;
+}
+td#a6:hover {
+  background: #b9b9b9;
+}
+td#a7:hover {
+  background: #b9b9b9;
+}
