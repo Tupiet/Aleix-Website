@@ -1,5 +1,13 @@
 let addButton = document.getElementById('addButton')
 let buttonsDiv = document.getElementById('buttonsDiv')
+let quantity = document.getElementById('quantity')
+
+const data = {
+    "userId": 1,
+    "title": "delectus aut autem",
+    "completed": false
+ };
+ 
 
 let generateButton = document.getElementById('generateButton')
 
@@ -36,12 +44,19 @@ generateButton.addEventListener('click', function() {
         console.log(this.children[0].value)
         console.log(this.children[1].value)
 
+        console.log(Identity.generate(3))
+
         switch(option.value) {
             case "Name": 
-                fetch('http://names.drycodes.com/10?nameOptions=girl_names', {
-                    mode: "cors",
-                    credentials: 'include'
-                  })
+                //fetch(`http://localhost:81?quantity=${quantity.value}`)
+                fetch(`http://localhost:81`, {
+                    credentials: "include",
+                    method: 'POST',              
+                    body: JSON.stringify({a: 1, b: 'Textual content'}),
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                })
                 .then(response => response.json())
                 .then(data => console.log(data))
 
