@@ -1,0 +1,49 @@
+/* Icona de GitHub (SVG) */
+#github-icon {
+    fill: #333; /* Color del fons de l'SVG */ 
+    color: #fff; /* Color de la icona */ 
+    
+    /* El posicionem a dalt de tot a la dreta, fix */
+    position: fixed;
+    top: 0;
+    right: 0;
+    
+    width: 6em;
+    height: 6em;
+
+    z-index: 10000;
+}
+
+/* Quan es faci hover a la icona, agafem la part del braç i li apliquem l'animació octocat-wave */
+.github-corner:hover .octo-arm {
+    animation: octocat-wave 2240ms ease-in-out;
+}
+
+/* Si la mida màxima no supera els 43em (dispositiu mòbil), no facis l'animació al fer hover, sinó fes-la continuament */
+@media (max-width: 43em) {
+    .github-corner:hover .octo-arm {
+        animation: none;
+    }
+
+    .github-corner .octo-arm {
+        animation: octocat-wave 2240ms 2s ease-in-out infinite;
+    }
+}
+
+/* L'animació */
+@keyframes octocat-wave {
+    0%,
+    25% {
+        transform: rotate(0);
+    }
+
+    5%,
+    15% {
+        transform: rotate(-25deg);
+    }
+
+    10%,
+    20% {
+        transform: rotate(10deg);
+    }
+}

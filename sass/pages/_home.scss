@@ -1,0 +1,89 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+body {
+    background: #000;
+}
+
+h1 {
+    background: linear-gradient(-45deg, #7f70c1, #7f70c1, #e89a3e, #e89a3e, #8add7c, #8add7c);
+    background-size: 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: change-color 7s ease-in-out infinite;
+}
+
+/* Els elements dins d'#intro es disposaran com a flex, centrats al mig */
+#intro > * {
+    color: #fff;
+    min-height: 30vh;
+    @include flex
+}
+
+/* Les seccions (franges horitzontals) */
+.section {
+    position: relative;
+    padding: var(--skew-padding) 0; /* Necessari per a què no sobresurti de la secció (top and bottom) */
+    margin-top: -1px;
+
+    @include flex;
+
+    /* La franja de color la generem ara! */
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        transform: skewY(var(--angle)); /* Ho girem tants graus com digui la variable --angle */
+    }
+
+    h2 {
+        margin-bottom: 0.75em;
+    }
+}
+
+/* El contingut, el que hi haurà dins de la franja */
+.content {
+    position: relative;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1.5em;
+    overflow: hidden;
+
+    @include flex(flex-start, flex-start);
+
+    /* El contingut que hi ha al footer (també té la classe content) */
+    &-footer {
+        color: white;
+        margin-top: calc(var(--skew-padding) * 2); /* Posem el contingut a sota de tot, que és un margin-top de 2 vegades el padding */  
+        @include flex(center);
+    
+        p {
+            text-align: center;
+            z-index: 1000;
+        }
+    }
+}
+
+/* Cada fons de les seccions */ 
+.bg-{
+    &1:before {
+        background: rgb(255, 249, 75);
+    }
+
+    &2:before {
+        background: rgb(90, 90, 90);
+    }
+
+    &3:before {
+        background: rgb(195, 42, 42);
+    }
+
+    &4:before {
+        background: #000;
+        padding: calc(var(--skew-padding) * 2) 0;    
+    }
+}

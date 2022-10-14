@@ -1,0 +1,18 @@
+/* Declarem les variables */
+
+$myFonts: ('Avenir', 'Avenir-d', sans-serif);
+
+:root {
+    --angle: -7deg;
+    --magic-number: 0.06139228045; /* tan(11°)/2 ----> és l'alçada al mig del triangle */
+    --max-width: 42em; /* amplada màxima */
+    --max-width-card: 18em;
+	--skew-padding: calc(var(--max-width) * var(--magic-number)); /* padding */
+}
+
+/* En cas que la mida de la pantalla arribi o superi els 42em, aquesta serà la mida màxima */
+@media screen and (max-width: 42em) {
+    :root {
+        --max-width: 100vw;
+    }
+}

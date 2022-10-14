@@ -1,0 +1,18 @@
+@use '../sass/abstracts/mixins' as *;
+@use '../sass/abstracts/typography' as *;
+@use '../sass/abstracts/variables' as *;
+
+@use '../sass/base/animations';
+@use '../sass/base/reset';
+@use '../sass/base/typography';
+
+@use '../sass/components/card';
+@use '../sass/components/custom-hover';
+@use '../sass/components/github-icon';
+@use '../sass/components/icons';
+
+@use '../sass/pages/home';
+
+@use '../sass/vendors/fontawesome/scss/fontawesome.scss';
+@use '../sass/vendors/fontawesome/scss/solid.scss';
+@use '../sass/vendors/fontawesome/scss/brands.scss'

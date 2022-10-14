@@ -1,0 +1,110 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+/* Container on aniran els .card */
+.cards {
+    width: calc(var(--max-width) - 2em); /* L'amplada és el màxim - el que mesura una carta */
+    margin-top: 3em;
+    padding: 0;
+    @include flex(space-between, flex-start, row, wrap);
+}
+
+/* Cada carta */
+.card {
+    height: auto;
+    width: var(--max-width-card);
+
+    background: #666;
+    color: #fff;
+    
+    border-radius: 10px;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.25);
+    
+    font-family: $myFonts;
+
+    @include flex(center, center, column);
+
+    padding: 0;
+
+    margin-top: 1.5em;
+
+    transition: transform 0.5s ease;
+    
+    &:hover {
+        transform: rotate(3deg)
+    }
+    
+    .card-title {
+        text-align: center;
+        font-size: 1.6em;
+        margin: 1.2em 0 0 0;
+    }
+    
+    .card-techs {
+        text-align: center;
+        font-size: 0.8em;
+        color: #D8E8F9;
+        margin: 5px 20px 20px 20px;
+    }
+    
+    .card-description {
+        margin: 0.5em 2.5em 0.5em 2.5em;
+        text-justify: justify;
+    }
+    
+    .buttons {
+        margin: 1.2em;
+    }
+    
+    .card-button {
+        padding: 0.4em;
+        margin-left: 0.4em;
+        margin-right: 0.4em;
+        
+        border: none;
+        outline: none;
+        text-decoration: none;
+        
+        border-radius: 12px;
+        
+        display: inline-block;
+        font: inherit;
+        box-shadow: 5px 5px 20px 5px #444;
+        
+        transition: background-color 0.5s ease;
+        
+        &:hover {
+            cursor: pointer;
+        }
+
+        &-preview {
+            background: #3D73AA;
+            color: #ddd;
+            
+            &:hover {
+                background: #699CD0;
+            }
+        }
+        
+        &-github {
+            background: #222;
+            color: #ddd;
+            
+            &:hover {
+                background: #3F3F3F;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 43em) {
+    .cards {
+        @include flex(center, center, column);
+        width: 100%;
+    }
+
+    .card {
+        width: 90%;
+    }
+}

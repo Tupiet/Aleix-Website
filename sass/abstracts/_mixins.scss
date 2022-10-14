@@ -1,0 +1,14 @@
+@mixin flex($content: center, $align: center, $direction: column, $wrap: nowrap) {
+    display: flex;
+    justify-content: $content;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+
+@mixin dont-select {
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}

@@ -1,0 +1,11 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+/* Animació que canvia el color d'un text */
+@keyframes change-color {
+    0% { background-position: 0px 33%; }
+	25% { background-position: 66% 33%; }
+	50% { background-position: 100% 66%; }
+    75% { background-position: 66% 33%; }
+    100% { background-position: 0px 33%; }
+}

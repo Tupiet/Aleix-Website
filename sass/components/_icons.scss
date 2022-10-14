@@ -1,0 +1,31 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.icons {
+    @include flex(center,center,row);
+    @include dont-select;
+    flex-wrap: wrap;
+
+    svg {
+        height: 4em;
+        width: 4em;
+    }
+
+    .icon {
+        height: 4em;
+        width: auto;
+        background: rgb(191, 191, 191);
+        padding: 0.5em;
+        margin: 0.5em;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+        transition: background-color 0.5s ease-in, box-shadow 0.5s ease-in, transform 0.5s ease;
+
+        &:hover {
+            background: #efefef;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 60px 0 rgba(0, 0, 0, 0.35);
+            transform: rotate(3deg)
+        }
+    }
+}
